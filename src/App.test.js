@@ -24,11 +24,8 @@ describe('App', () => {
     square1.click()
     square2.click()
     square3.click()
-    const square1text = square1.innerHTML
-    const square2text = square2.innerHTML
-    const square3text = square3.innerHTML
-    expect(square1text).toBe('X')
-    expect(square2text).toBe('O')
-    expect(square3text).toBe('X')
+    expect(square1.innerHTML).toBe('X')
+    expect(square2.innerHTML).toBe('O')
+    expect(square3.innerHTML).toBe('X')
   })
 })
