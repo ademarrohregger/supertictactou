@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
+import Button from './Button'
 
 function App() {
-  const [text, setText] = useState('--')
-
-  const squares = Array.from({ length: 9 }, (item, index) => (
-    <button className="square" key={index} onClick={() => setText('X')}>
-      {text}
-    </button>
-  ))
+  const squares = Array.from({ length: 9 }, (item, index) => <Button key={index}></Button>)
   return (
     <div id="App">
       <div className="square-container">{squares}</div>
